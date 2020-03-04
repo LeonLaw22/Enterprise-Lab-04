@@ -5,7 +5,7 @@ http.createServer(function (request, response) {
 	//HTTP Status: 200 : OK
 	//Contest Type: text/plain
 	response.writeHead(200, {
-		'Content-Type': 'text/html'
+		'Content-Type': 'text/html',
 		'Access-Control-Allow-Origin' : '*'
 	});
 	var readStream = fs.createreadStream(__dirname + 'index.html');
