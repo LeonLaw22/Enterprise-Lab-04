@@ -18,12 +18,3 @@ http.createServer(function (request, response) {
 
 }).listen(PORT);
 	console.log('Example app listening on port 3000!');
-
-
-//Console will print the message 
-var http = require("http");
-fs = require('fs');
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-console.log('Our app is tunning on port ${ PORT }');
-});
