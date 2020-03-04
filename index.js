@@ -12,9 +12,10 @@ http.createServer(function (request, response) {
 		'Content-Type': 'text/html',
 		'Access-Control-Allow-Origin' : '*'
 	});
-	var readStream = fs.createreadStream(__dirname + '/index.html');
+	var readStream = fs.createReadStreameadStream(__dirname + '/index.html');
 	//send a message
 	readStream.pipe(response);
 
 }).listen(PORT);
 	console.log('Example app listening on port 3000!');
+
