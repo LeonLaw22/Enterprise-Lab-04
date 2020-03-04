@@ -6,7 +6,7 @@ http.createServer(function (request, response) {
 	//Contest Type: text/plain
 	response.writeHead(200, {
 		'Content-Type': 'text/html'
-		'Access-Control-Allow-origin' : '*'
+		'Access-Control-Allow-Origin' : '*'
 	});
 	var readStream = fs.createreadStream(__dirname + 'index.html');
 	//send a message
