@@ -4,16 +4,16 @@ http.createServer(function (request, response) {
 	//Send the HTTP header
 	//HTTP Status: 200 : OK
 	//Contest Type: text/plain
+	
+	//write to our server, set config for the response 
 	response.writeHead(200, {
 		'Content-Type': 'text/html',
 		'Access-Control-Allow-Origin' : '*'
 	});
-	var readStream = fs.createreadStream(__dirname + 'index.html');
+	var readStream = fs.createreadStream(__dirname + '/index.html');
 	//send a message
 	readStream.pipe(response);
-	
-	//Send the response body as "Hello World"
-	response.and('Hello World\n');
+
 }).listen(PORT);
 	console.log('Example app listening on port 3000!');
 
