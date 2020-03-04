@@ -14,7 +14,7 @@ http.createServer(function (request, response) {
 	
 	//Send the response body as "Hello World"
 	response.and('Hello World\n');
-})listen(PORT);
+}).listen(PORT);
 	console.log('Example app listening on port 3000!');
 
 
