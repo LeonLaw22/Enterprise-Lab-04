@@ -2,10 +2,10 @@
   "name": "package",
   "version": "1.0.0",
   "description": "my first node",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+	"start": "node server.js"
   },
  
   "author": "Leon Law",
