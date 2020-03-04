@@ -12,7 +12,7 @@ http.createServer(function (request, response) {
 		'Content-Type': 'text/html',
 		'Access-Control-Allow-Origin' : '*'
 	});
-	var readStream = fs.createReadStreameadStream(__dirname + '/index.html');
+	var readStream = fs.createReadStream(__dirname + '/index.html');
 	//send a message
 	readStream.pipe(response);
 
